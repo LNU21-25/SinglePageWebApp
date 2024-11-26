@@ -11,7 +11,7 @@
     <header>
         <img src="images/tarzan.png" alt="Logo">
         <h1>Form Page</h1>
-        <p>Subtitle or Slogan</p>
+        <p>Become a Member (not scam, trust)</p>
     </header>
     <nav>
         <ul>
@@ -28,12 +28,33 @@
         <form>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name"><br><br>
-            <label for="card">Card Type:</label>
-            <input type="text" id="card" name="card"><br><br>
+            
+            <fieldset>
+                <legend>Card Type:</legend>
+                <label>
+                    <input type="radio" id="visa" name="card" value="Visa">
+                    Visa
+                </label><br>
+                <label>
+                    <input type="radio" id="mastercard" name="card" value="MasterCard">
+                    MasterCard
+                </label><br>
+                <label>
+                    <input type="radio" id="amex" name="card" value="AmEx">
+                    American Express
+                </label><br>
+                <label>
+                    <input type="radio" id="discover" name="card" value="Discover">
+                    Discover
+                </label>
+            </fieldset><br>
+    
             <label for="number">Card Number:</label>
             <input type="text" id="number" name="number"><br><br>
+            
             <label for="validity">Validity:</label>
             <input type="text" id="validity" name="validity"><br><br>
+            
             <input type="submit" value="Submit">
         </form>
     </main>
