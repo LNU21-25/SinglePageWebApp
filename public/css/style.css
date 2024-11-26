@@ -1,23 +1,49 @@
-body {
-    font-family: Arial, sans-serif;
+/* 
+ * Website Stylesheet
+ * Author: [Your Name]
+ * Date: [Current Date]
+ */
+
+/* Reset and base styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
 header {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    background-image: url('../images/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header img {
+    max-height: 100px;
+    margin-right: 20px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0;
-    background-color: #444;
-    margin: 0;
 }
 
 nav ul li {
@@ -25,39 +51,34 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #333;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-aside {
-    width: 25%;
-    padding: 10px;
-}
-
-section {
-    width: 50%;
-    padding: 10px;
-}
-
+/* Footer Styles */
 footer {
     display: flex;
-    justify-content: space-around;
-    background: #222;
-    color: white;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #f4f4f4;
 }
 
-@media (max-width: 768px) {
-    aside, section {
-        width: 100%;
-    }
+footer section {
+    flex: 1;
+    padding: 0 15px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     footer {
         flex-direction: column;
+    }
+    
+    footer section {
+        margin-bottom: 15px;
     }
 }
