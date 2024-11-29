@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Open+Sans:ital,wght@1,300&display=swap');
+
 /* 
  * Website Stylesheet
  * Author: Henry Shafer
@@ -29,6 +31,12 @@ header {
     gap: 0.5rem;
 }
 
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 header img {
     max-width: 150px;
     height: auto;
@@ -58,12 +66,44 @@ nav ul {
     flex-wrap: wrap;
     gap: 1rem;
 }
+footer a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
 nav ul li a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer ul li {
+    margin: 0.5rem 0;
+}
+
+/* List Styles */
+.custom-list li {
+    margin: 10px 0;
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #2E7D32;
+    list-style-type: square;
+    background-color: #E8F5E9; /* Light green background */
+}
+
+.about-aside ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -104,21 +144,6 @@ footer h4 {
 
 footer ul {
     list-style: none;
-}
-
-footer ul li {
-    margin: 0.5rem 0;
-}
-
-footer a {
-    color: #ddd;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: white;
-    text-decoration: underline;
 }
 
 /* Responsive Adjustments */
@@ -168,11 +193,7 @@ footer a:hover {
     }
 }
 
-/* Ensure images are responsive */
-img {
-    max-width: 100%;
-    height: auto;
-}
+
 /* home.css */
 .home-main {
     position: relative;
@@ -241,12 +262,6 @@ img {
 
 .about-aside ul li {
     margin-bottom: 0.5rem;
-}
-
-.about-aside ul li a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
 }
 
 .about-aside ul li a:hover {
@@ -318,18 +333,6 @@ img {
     .col3-mid {
         flex: none;
     }
-}
-
-
-/* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Open+Sans:ital,wght@1,300&display=swap');
-
-/* General Text Styling */
-body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.8;
-    background-color: #f0f0f5;
-    color: #222;
 }
 
 /* Title Header */
@@ -421,18 +424,6 @@ body {
     background-color: #FFEB3B; /* Bright yellow */
     padding: 10px;
     font-weight: bold;
-}
-
-/* List Styles */
-.custom-list li {
-    margin: 10px 0;
-    padding-left: 25px;
-    font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
-    color: #2E7D32;
-    list-style-type: square;
-    background-color: #E8F5E9; /* Light green background */
-    padding: 10px;
 }
 
 /* General Table Styling */
